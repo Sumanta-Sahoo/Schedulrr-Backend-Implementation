@@ -41,7 +41,7 @@ public class User{
     private LocalDateTime updatedAt;
 
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Availability availability;
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<Event> events;

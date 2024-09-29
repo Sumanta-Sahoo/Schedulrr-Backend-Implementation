@@ -19,6 +19,8 @@ import java.util.List;
 @Table(name = "availability")
 public class Availability{
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private int timeGap;
 
